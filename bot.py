@@ -22,13 +22,13 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-APP_ID = os.environ.get("APP_ID", None)
-APP_HASH = os.environ.get("APP_HASH", None)
-BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+APP_ID = os.environ.get("APP_ID" , "29616312")
+APP_HASH = os.environ.get("APP_HASH" , "dd1a05ab4c47a5a037cc067cf4bded27")
+BOT_TOKEN = os.environ.get("BOT_TOKEN" , "6212571908:AAGNcYFCkthlRk0Wi8ev4ipTJyIQjneb0ms")
 TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
-MONGO_DB = os.environ.get("MONGO_DB", None)
+MONGO_DB = os.environ.get("MONGO_DB" , none)
 # type yout telegram id or username
-LOG = os.environ.get("LOG", None)
+LOG = os.environ.get("LOG" , "6262157003")
 
 bot = TelegramClient("pinterestbot", APP_ID, APP_HASH).start(bot_token=BOT_TOKEN)
 
